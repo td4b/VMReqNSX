@@ -12,4 +12,4 @@
   * yaml
   * xml.etree
   * sockets
-  * requ
+  * requests
