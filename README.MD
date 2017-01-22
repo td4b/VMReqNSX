@@ -1,4 +1,4 @@
-# VMResNSX Readme
+# VMReqNSX Readme
 **General Information**
 
 *This is a small program written to find all virtual machines and their IP addresses associated with a security group in vmware NSX.*
