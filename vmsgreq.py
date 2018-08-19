@@ -28,7 +28,7 @@ class const:
 # define API headers for request.
 rheaders = {'Content-Type': 'application/xml'}
 
-# initialize constructor.
+# initialize authentication data.
 c = const({},  yaml['host'], yaml['username'], yaml['password'])
 
 payload = c.HOST + '/api/2.0/services/securitygroup/scope/globalroot-0'
