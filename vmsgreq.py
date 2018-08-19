@@ -15,9 +15,7 @@ yamlfile = open('login.yaml')
 yaml = yaml.load(yamlfile)
 
 # define objects.
-
 class const:
-    
     def __init__(self,data, HOST, USR, PW):
         self.data = data
         self.HOST = HOST
@@ -39,7 +37,6 @@ response = requests.get(payload, auth = (c.USR,c.PW), verify=False, headers= rhe
 SG = ET.fromstring(response.content)
 
 # define parsing functions.
-
 def getobj(treename):
     for i in treename.findall('securitygroup'):
         try:
@@ -73,7 +70,6 @@ response = requests.get(payload, auth = (c.USR,c.PW), verify=False, headers= rhe
 VM = ET.fromstring(response.content)
 
 # next pull virtual machines from the security group-ID.
-
 print('\n')
 f = open("hosts.txt","w")
 print("### Virtual Machines in " + str(sgname) + " ####\n")
